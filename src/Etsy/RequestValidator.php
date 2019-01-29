@@ -92,7 +92,7 @@ class RequestValidator
 								break;
 							}
 
-							if (preg_match('/@.*?;type=.*?\/.+$/', @$arg[0]))
+							if (preg_grep('/@.*?;type=.*?\/.+$/', @$arg[0]))
 							{
 								$type = 'imagefile';
 								$name = '@' . $name;
